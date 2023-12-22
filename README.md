@@ -43,3 +43,21 @@ Dependencies:
 * Spring Boot DevTools
 
 Jar - packaging
+
+
+### Try running application
+Should return whitelabel error page
+
+This is good, as it means it works, but nothing is implemented yet
+
+
+## Configuring the database
+In project find
+* src/main/resources/application.properties
+
+Add the following:
+```
+spring.data.mongodb.database=databasename
+
+spring.data.mongodb.uri=mongodb+srv://<username>:<password>@<cluster>.<database>
+```
