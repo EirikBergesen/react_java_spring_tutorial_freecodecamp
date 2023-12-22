@@ -13,9 +13,9 @@ Spring boot stable release - 3.2.1
 Maven Project - Java 21 language
 
 Dependencies:
-Lombok
-Spring Web
-Spring Data MongoDB
-Spring Boot DevTools
+* Lombok
+* Spring Web
+* Spring Data MongoDB
+* Spring Boot DevTools
 
 Jar - packaging
