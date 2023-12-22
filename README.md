@@ -74,3 +74,8 @@ https://mvnrepository.com/artifact/me.paulschwarz/spring-dotenv
 
 copy paste into pom.xml, into dependencies
 
+### Creating a class
+
+Create new file Movie
+
+Add annotations and fields/variables to class that match our database fields
