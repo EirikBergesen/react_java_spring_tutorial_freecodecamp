@@ -6,13 +6,6 @@ Full Stack Development with Java Spring Boot, React, and MongoDB - Full Course
 https://www.youtube.com/watch?v=5PdEmeopJVQ - 21/12-2023
 
 
-
-
-
-
-# Full stack development course
-
-
 ### Spring boot initialization
 https://start.spring.io/
 
