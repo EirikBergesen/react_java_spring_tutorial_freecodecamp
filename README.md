@@ -74,8 +74,28 @@ https://mvnrepository.com/artifact/me.paulschwarz/spring-dotenv
 
 copy paste into pom.xml, into dependencies
 
-### Creating a class
+### Creating a class - Movie
 
 Create new file Movie
 
 Add annotations and fields/variables to class that match our database fields
+
+
+
+* @Document - Spring annotation to tell spring that this is a document to be stored in the database
+* @Data - Lombok annotation to generate getters and setters and tostrings
+* @AllArgsConstructor - Lombok annotation to generate constructor with all fields
+* @NoArgsConstructor - Lombok annotation to generate constructor with no fields
+
+@Id - Spring annotation to tell spring that this is the id field
+
+
+
+### Creating a class - Review
+
+Make notes here
+
+### Creating a class - MovieController
+
+https://stackoverflow.com/questions/76938433/spring-boot-mongo-db-bean-error-for-srv-host-name
+Learned that ${env.prop} is deprecated, and that we should use ${prop} instead
