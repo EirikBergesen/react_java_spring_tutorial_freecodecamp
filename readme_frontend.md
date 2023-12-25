@@ -26,3 +26,40 @@ in the file index.js, delete the following lines:
 * reportWebVitals();
 * import reportWebVitals from './reportWebVitals';
 
+
+### Installing packages
+
+npm install axios
+* Axios - makes it easier to make http requests from our react client, so we can retrieve information from our api, and POST information to our api.
+
+npm install bootstrap
+
+
+for layout and styling purposes:
+npm install react-bootstrap
+
+
+for font awesome icons:
+npm i @fortawesome/react-fontawesome
+
+
+second font awesome package: 
+npm i @fortawesome/free-solid-svg-icons
+
+
+to play movie trailers in the app:
+react player component:
+npm i react-player
+
+
+in order to decleare the paths where our components will reside, in order to map the routes to our components, we are going to use relevant components from the react-router-dom npm package:
+npm i react-router-dom
+
+
+we want to display movies on a carousel.
+we can implement a carousel using material UI.
+We will install 3 material ui npm packages
+
+* npm install @mui/material @emotion/react @emotion/styled
+* npm install react-material-ui-carousel
+
