@@ -128,3 +128,16 @@ Annotations:
 * @RequestMapping - Spring annotation to tell spring that this is the root path for this controller
 
 fields/variables:
+
+
+### Creating REST APIs
+
+In REST APIs there are usually multiple layers.
+One of the layers is the API layer. (MovieController class).
+Getting a request from the user and returning a response.
+Using a service class its delegating the tasks of retrieving data from the database and returning it to the user.
+Gets the list of the movies and returns with an http status.
+
+
+Business logic layer - Service class
+Talks to the database and returns the data to the API layer.
