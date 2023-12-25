@@ -141,3 +141,24 @@ Gets the list of the movies and returns with an http status.
 
 Business logic layer - Service class
 Talks to the database and returns the data to the API layer.
+
+
+
+### Creating a review
+
+Post with postman
+address localhost:8080/api/v1/reviews
+
+choose body -> raw -> JSON
+
+```
+{
+    "reviewBody": "I really liked this movie",
+    "imdbId": "tt3915174"
+}
+```
+
+if return status is 201 created, then it worked
+and will be found at
+http://localhost:8080/api/v1/movies/tt3915174
+
