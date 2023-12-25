@@ -80,8 +80,6 @@ Create new file Movie
 
 Add annotations and fields/variables to class that match our database fields
 
-
-
 * @Document - Spring annotation to tell spring that this is a document to be stored in the database
 * @Data - Lombok annotation to generate getters and setters and tostrings
 * @AllArgsConstructor - Lombok annotation to generate constructor with all fields
@@ -89,13 +87,44 @@ Add annotations and fields/variables to class that match our database fields
 
 @Id - Spring annotation to tell spring that this is the id field
 
+#### .env file
+
+https://stackoverflow.com/questions/76938433/spring-boot-mongo-db-bean-error-for-srv-host-name
+Learned that ${env.prop} is deprecated, and that we should use ${prop} instead
 
 
 ### Creating a class - Review
 
-Make notes here
+Annotations:
 
-### Creating a class - MovieController
+fields/variables:
+ObjectId id
+String body
 
-https://stackoverflow.com/questions/76938433/spring-boot-mongo-db-bean-error-for-srv-host-name
-Learned that ${env.prop} is deprecated, and that we should use ${prop} instead
+* @Document - Spring annotation to tell spring that this is a document to be stored in the database
+* @Data - Lombok annotation to generate getters and setters and tostrings
+* @AllArgsConstructor - Lombok annotation to generate constructor with all fields
+* @NoArgsConstructor - Lombok annotation to generate constructor with no fields
+* @Id - Spring annotation to tell spring that this is the id field
+
+An instance of a review. A review is a document in the database, and has an id and a body.
+
+
+### Creating a repository interface - MovieRepository
+
+Annotations:
+* @Repository - Spring annotation to tell spring that this is a repository interface
+
+extends MongoRepository<Movie, String>
+contains methods for interacting with the database
+* insert
+* 
+
+
+### Creating a controller(?) class - MovieController
+
+Annotations:
+* @RestController - Spring annotation to tell spring that this is a controller class
+* @RequestMapping - Spring annotation to tell spring that this is the root path for this controller
+
+fields/variables:
