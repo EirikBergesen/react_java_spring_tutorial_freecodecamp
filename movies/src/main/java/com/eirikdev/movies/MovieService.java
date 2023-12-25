@@ -1,9 +1,11 @@
 package com.eirikdev.movies;
 
+import org.bson.types.ObjectId;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class MovieService {
@@ -17,5 +19,10 @@ public class MovieService {
     public List<Movie> allMovies() {
         // This findAll method is defined in the MongoRepository class
         return movieRepository.findAll();
+    }
+
+    public Optional<Movie> singleMovie(ObjectId id) {
+        // Optional will remove null if the object id does not exist
+        return movieRepository.findById(id);
     }
 }
