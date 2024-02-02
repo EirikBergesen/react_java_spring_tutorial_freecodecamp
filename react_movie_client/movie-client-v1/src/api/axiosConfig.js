@@ -1,11 +1,17 @@
 import axios from 'axios';
 
 
-export default axoios.create(
+export default axios.create(
     {
-        baseURL: 'https://9c96-103-106-239-104.ap.ngrok.io',
-        headers: {"ngrok-skip-browser-warning": "true"}
-        // This header is needed because there are problems 
-        // in development face of cors cross-origin-resource-sharing
+        baseURL: 'http://localhost:8080',
+        headers: {
+            // "ngrok-skip-browser-warning": "true"
+        }
+        /* 
+        This header is needed because there are problems 
+        in development face of cors cross-origin-resource-sharing
+        */
+        // above was not necessary as i had change the controller on the backend
+        // See the controller in the backend for more info or readme file
     }
 );

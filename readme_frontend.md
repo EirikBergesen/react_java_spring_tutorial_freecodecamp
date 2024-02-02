@@ -63,3 +63,17 @@ We will install 3 material ui npm packages
 * npm install @mui/material @emotion/react @emotion/styled
 * npm install react-material-ui-carousel
 
+
+### Axios - API requests
+
+/api/axiosConfig.js
+
+creates a base url for the axios requests
+
+Cross-Origin-Resource-Sharing (CORS) is a security feature implemented in web browsers to prevent JavaScript from making requests to a different domain than the one that served the JavaScript. This is a security feature to prevent cross-site scripting attacks.
+
+
+I found this site, looking like my problem
+https://rajendraprasadpadma.medium.com/what-the-cors-ft-spring-boot-spring-security-562f24d705c9
+
+put @CrossOrigin(origins = "http://localhost:3000") on the controller class, and it worked.
