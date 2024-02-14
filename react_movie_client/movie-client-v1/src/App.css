@@ -2,17 +2,17 @@
 
 *{
   box-sizing: border-box;
-  font-family: 'Quicksand', 'Arial', 'Helvetica', 'sans-serif';
+  font-family: 'Quicksand', Arial, Helvetica, sans-serif;
 }
 body{
-  margin: 0;
-  padding: 0;
+  padding:0;
+  margin:0;
 }
 .App{
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   background-color: black;
-  color: white;
-  margin-top: 10px;
+  color:white;
+  margin-top:10px;
 }
